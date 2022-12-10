@@ -23,7 +23,7 @@ public class RepostOnMastodon
 
 
     [FunctionName("RepostOnMastodon")]
-    public async Task Run([TimerTrigger("* * * * *")] TimerInfo myTimer, ILogger log)
+    public async Task Run([TimerTrigger("0 * * * * *")] TimerInfo myTimer, ILogger log)
     {
         var notifications = await client
             .GetNotifications(excludeTypes: NotificationType.Follow | NotificationType.Favourite | NotificationType.Reblog);
