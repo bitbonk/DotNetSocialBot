@@ -9,9 +9,15 @@ namespace DotNetSocialBot.FunctionApp
 {
     public static class StatusExtensions
     {
-        public static bool IsReply(this Status n)
+        public static bool IsReply(this Status status)
         {
-            return n.InReplyToId != null;
+            return status.InReplyToId != null;
+        }
+
+        // TODO: Get "my" AccountName instead of hard coding it
+        public static bool IsFromMe(this Status status)
+        {
+            return status.Account.AccountName.Equals("bot@dotnet.social", StringComparison.InvariantCultureIgnoreCase);
         }
     }
 }
