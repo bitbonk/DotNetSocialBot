@@ -5,8 +5,8 @@
 version: "1.0"
 
 #Specify inspection profile for code analysis
-profile:
-  name: qodana.starter
+# profile:
+#   name: qodana.starter
 
 #Enable inspections
 #include:
@@ -27,3 +27,7 @@ profile:
 
 #Specify Qodana linter for analysis (Applied in CI/CD pipeline)
 linter: jetbrains/qodana-dotnet:latest
+
+dot-net: 
+  solution: DotNetSocialBot.sln
+  
