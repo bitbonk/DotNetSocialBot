@@ -9,8 +9,8 @@ profile:
   name: qodana.recommended
 
 #Enable inspections
-#include:
-#  - name: <SomeEnabledInspectionId>
+include:
+  - name: RoslynAnalyzersOutputInspection
 
 #Disable inspections
 #exclude:
