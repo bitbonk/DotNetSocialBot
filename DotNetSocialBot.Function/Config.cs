@@ -1,4 +1,4 @@
-﻿namespace DotNetSocialBot.FunctionApp;
+namespace DotNetSocialBot.Function;
 
 internal static class Config
 {
