@@ -1,8 +1,8 @@
 {
   "profiles": {
-    "DotNetSocialBot.FunctionApp": {
+    "DotNetSocialBot.Function": {
       "commandName": "Project",
-      "commandLineArgs": "--port 7224",
+      "commandLineArgs": "--port 7245",
       "launchBrowser": false
     }
   }

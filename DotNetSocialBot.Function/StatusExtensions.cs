@@ -1,4 +1,4 @@
-﻿using Mastonet.Entities;
+using Mastonet.Entities;
 
 namespace DotNetSocialBot.FunctionApp;
 
